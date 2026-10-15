@@ -1,0 +1,57 @@
+# ============================================================
+#  站点基础配置
+#  上线前需要改的只有两行：baseURL 和 title
+# ============================================================
+baseURL: "https://example.org/"     # TODO: 换成你的域名或 *.pages.dev
+title: "我的项目笔记"                # TODO: 换成你喜欢的站名
+theme: "PaperMod"
+locale: "zh-cn"
+defaultContentLanguage: "zh-cn"
+
+# 允许在文章正文里直接写 HTML（表格、视频等）
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  # 代码高亮：博客里全是 C / Makefile / Nix，这块很重要
+  highlight:
+    noClasses: false
+    style: monokai
+    lineNos: true
+    codeFences: true
+    guessSyntax: true
+
+# 首页与分页
+pagination:
+  pagerSize: 10
+
+# 菜单
+menu:
+  main:
+    - name: 文章
+      url: /posts/
+      weight: 10
+    - name: 关于
+      url: /about/
+      weight: 20
+
+# PaperMod 主题参数
+params:
+  env: production
+  description: "记录项目从零到一的过程：为什么这么写、踩过什么坑"
+  author: "YYUN64"
+
+  # 默认深色/浅色模式
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true      # 代码块一键复制
+  ShowToc: true                  # 文章目录
+  TocOpen: true
+  comments: false
+
+  # 允许在文章 front matter 里写 cover / images 等
+  assets:
+    disableHLJS: true
