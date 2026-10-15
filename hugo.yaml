@@ -2,7 +2,7 @@
 #  站点基础配置
 #  上线前需要改的只有两行：baseURL 和 title
 # ============================================================
-baseURL: "https://example.org/"     # TODO: 换成你的域名或 *.pages.dev
+baseURL: "https://blog-debug-car.pages.dev/"
 title: "我的项目笔记"                # TODO: 换成你喜欢的站名
 theme: "PaperMod"
 locale: "zh-cn"
